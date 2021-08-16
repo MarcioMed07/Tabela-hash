@@ -8,14 +8,14 @@
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 - Algorítimos:
     - [x] Tentativa Linear
-    - [] Tentativa Quadrática
-    - [] Dispersão Dupla
+    - [x] Tentativa Quadrática
+    - [x] Dispersão Dupla
 - Métricas:
-    - [] Número de Colisões
-    - [] Tempo para encontrar determinada chave
+    - [x] Número de Colisões
+    - [ ] Tempo para encontrar determinada chave
 - Cenários de Teste:
-    - [] Tabelas hash de tamanho diferente
-    - [] Inserção e exclusão de chaves de forma aleatória
+    - [ ] Tabelas hash de tamanho diferente
+    - [ ] Inserção e exclusão de chaves de forma aleatória
 
 ##  Pré-requisitos
 
@@ -43,8 +43,16 @@ Os seguintes argumentos opcionais estão disponiveis:
 Argumento| Descrição
 :-----:|:-----:
 -v | Exibe a tabela ao fim da execução do programa
+-c | Exibe a quantidade de colisões causadas em uma cada busca
+-q | Utiliza o algoritimo de Tentativa Quadrática
+-d | Utiliza o algoritimo de Dispersão Dupla
+-f \<double> | Adiciona nós na tabela até que o fator de carga double 
+-b \<int> | Busca uma chave no tabela
 
-Até o presente momento o comportamento do programa é criar a tabela com o tamanho solicitado, inserir os valores 4, 5 e 14 (nessa ordem) depois imprimir o resultado da busca pela chave 14.
+
+Até o presente momento o comportamento do programa é criar a tabela com o tamanho solicitado, inserir os valores 4, 5, 6, 7 e 14 (nessa ordem) depois imprimir o resultado da busca pela chave 14.
+
+O algorítimo padrão utilizado é a Tentativa Linear, para utilizar outro passe um dos argumentos descritos acima
 
 As chaves e valores dos nós possuem o mesmo valor inteiro de chave e valor e a função hash base do endereçamento é 
 ``` c++
