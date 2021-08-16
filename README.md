@@ -50,8 +50,6 @@ Argumento| Descrição
 -b \<int> | Busca uma chave no tabela
 
 
-Até o presente momento o comportamento do programa é criar a tabela com o tamanho solicitado, inserir os valores 4, 5, 6, 7 e 14 (nessa ordem) depois imprimir o resultado da busca pela chave 14.
-
 O algorítimo padrão utilizado é a Tentativa Linear, para utilizar outro passe um dos argumentos descritos acima
 
 As chaves e valores dos nós possuem o mesmo valor inteiro de chave e valor e a função hash base do endereçamento é 
